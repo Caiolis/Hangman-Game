@@ -1,7 +1,9 @@
+import Letters from "./components/Letters/Letters";
+
 export default function App() {
   return(
-    <div>
-      <h1> Olá Mundo!</h1>
+    <div className="letter-container">
+      <Letters />
     </div>
   );
 }
