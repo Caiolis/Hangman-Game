@@ -1,6 +1,6 @@
 import "./style.css";
 
-export default function Letters() {
+export default function Letters({ lettersKeyboard }) {
   const alphabet = [
     "a", "b", "c",
     "d", "e", "f",
@@ -15,15 +15,15 @@ export default function Letters() {
 
   return (
     <>
-      {alphabet.map(letter => <LetterButton letter={letter.toUpperCase()}/>)}
+      {alphabet.map(letter => <LetterButton lettersKeyboard={lettersKeyboard} key={letter} letter={letter.toUpperCase()}/>)}
     </>
   );
 }
 
-function LetterButton(props) {
+function LetterButton({ lettersKeyboard, letter }) {
   return (
         <div className="letter">
-            <button disabled="true">{props.letter}</button>
+            <button disabled={lettersKeyboard}>{letter}</button>
         </div>
   );
 }
