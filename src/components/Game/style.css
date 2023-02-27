@@ -1,0 +1,38 @@
+.game-container {
+    display: flex;
+    padding: 30px 50px 0px 50px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+}
+
+.game-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 550px;
+}
+
+.start-button {
+    background-color: #27AE60;
+    color: #FFF;
+    font-family: Roboto;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #138442;
+}
+
+.word-container span {
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 50px;
+}

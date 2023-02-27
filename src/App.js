@@ -1,9 +1,13 @@
 import Letters from "./components/Letters/Letters";
+import Game from "./components/Game/Game";
 
 export default function App() {
   return(
-    <div className="letter-container">
-      <Letters />
-    </div>
+    <>
+      <Game />
+      <div className="letter-container">
+        <Letters />
+      </div>
+    </>
   );
 }
